@@ -1,6 +1,7 @@
 from cadenas_subsecuentes.main import subsecuencia
 from scramble.main import comparar_cadenas
 from abuela.ejercicio4 import give_cookies
+from justificar_textos.ejercicio2 import justificar_textos
 
 
 menu: int = 0
@@ -19,16 +20,15 @@ while menu != 5:
     elif menu == 2:
         opcion = 0
         cadenas = []
-        while opcion == 2:
+        while opcion != 2:
             print("1. Agregar")
             print("2. Salir")
             opcion = int(input("Ingresu su opcion: "))
             if opcion == 1:
-                cadena1 = input("Cadena 1: ")
+                cadena1 = input("Cadena: ")
                 cadenas.append(cadena1)
         maximo = int(input("Maximo: "))
-        #  aquí va ir tu función
-        # Parametros: cadenas, maximo
+        justificar_textos(cadenas, maximo)
     elif menu == 3:
         cadena1 = input("Cadena 1: ")
         cadena2 = input("Cadena 2: ")

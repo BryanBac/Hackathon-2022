@@ -47,9 +47,3 @@ def justificar_textos(cadena, maximo):
                 nueva_cadena = nueva_cadena + palabra
 
         print(nueva_cadena)
-        
-        
-
-
-justificar_textos(
-    ["hola amigos mundo", "uno", "como les va a todos", "malos dias", "aquí va otra"], 20)
