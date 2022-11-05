@@ -47,8 +47,8 @@ def justificar_textos(cadena, maximo):
                 nueva_cadena = nueva_cadena + palabra
 
         print(nueva_cadena)
-        print(len(nueva_cadena))
-        # print(f"\nNueva cadena {len(nueva_cadena)}: \n{nueva_cadena}")
+        
+        
 
 
 justificar_textos(
