@@ -17,7 +17,18 @@ while menu != 5:
         cadena2 = input("Cadena 2: ")
         print(f"¿Son cadenas con los mismos caracteres? \n {comparar_cadenas(cadena1, cadena2)}")
     elif menu == 2:
-        print("###")
+        opcion = 0
+        cadenas = []
+        while opcion == 2:
+            print("1. Agregar")
+            print("2. Salir")
+            opcion = int(input("Ingresu su opcion: "))
+            if opcion == 1:
+                cadena1 = input("Cadena 1: ")
+                cadenas.append(cadena1)
+        maximo = int(input("Maximo: "))
+        #  aquí va ir tu función
+        # Parametros: cadenas, maximo
     elif menu == 3:
         cadena1 = input("Cadena 1: ")
         cadena2 = input("Cadena 2: ")
