@@ -20,9 +20,3 @@ def subsecuencia(cadena1: str, cadena2: str):
             cadena = cadena + cadena1[contador]
         contador += 1
     return cadena
-
-
-print(subsecuencia("fsnutno", "tsmunio"))
-print(subsecuencia("nutno", "tsmunio"))
-print(subsecuencia("fsnutnoxc", "tsmun"))
-print(subsecuencia("byron", "bryan"))

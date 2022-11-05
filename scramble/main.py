@@ -7,8 +7,3 @@ def comparar_cadenas(cadena1: str, cadena2: str):
             return False
     return True
 
-
-print(comparar_cadenas("eva", "ae3v"))  # Con más caracteres en la segunda
-print(comparar_cadenas("eva", "aev"))  # Cadenas validas
-print(comparar_cadenas("eva", "ava"))  # Cadenas no iguales
-print(comparar_cadenas("bryan", "byr"))  # Con más caracteres en la primera
