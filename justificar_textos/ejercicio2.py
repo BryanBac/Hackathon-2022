@@ -1,3 +1,5 @@
+import math
+
 def justificar_textos(cadena, maximo):
     for enunciado in cadena:
         solo_palabras = enunciado.split()
@@ -6,8 +8,9 @@ def justificar_textos(cadena, maximo):
         for i in solo_palabras: 
             letras_por_palabra = letras_por_palabra + len(i)
         espacios_faltantes = maximo - letras_por_palabra
-        espacios = int(espacios_faltantes / len(solo_palabras))
-        # print(espacios)
+        espacios = math.ceil(espacios_faltantes / len(solo_palabras))
+        print(espacios_faltantes / len(solo_palabras))
+        print(espacios)
         nueva_cadena = ''
         for i in range(0,len(solo_palabras)):
             if i != len(solo_palabras) - 1:
@@ -24,4 +27,4 @@ def justificar_textos(cadena, maximo):
 
 
     
-justificar_textos(["buenos dias","malos dias"], 20)
+justificar_textos(["hola amigos mundo","malos dias"], 20)
